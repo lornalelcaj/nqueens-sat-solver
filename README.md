@@ -62,7 +62,7 @@ This program supports the following SAT solvers through PySAT:
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/<your-username>/nqueens-sat.git
+git clone https://github.com/lornalelcaj/nqueens-sat.git
 cd nqueens-sat
  ```
 2. Install dependencies:
