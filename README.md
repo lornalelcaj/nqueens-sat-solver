@@ -43,3 +43,56 @@ The N-Queens problem requires placing N queens on an N×N chessboard such that n
 
 ```bash
 pip install python-sat[pblib,aiger]
+ ```
+
+## Supported SAT Solvers
+
+This program supports the following SAT solvers through PySAT:
+
+- **Glucose3** (default)
+- **MiniSat**
+- **CaDiCaL**
+
+> **Note:** The source code of the SAT solvers is **not included**. PySAT provides Python bindings to the solvers.
+
+---
+
+## Installation
+
+1. Clone this repository:
+
+```bash
+git clone https://github.com/<your-username>/nqueens-sat.git
+cd nqueens-sat
+ ```
+2. Install dependencies:
+```bash
+pip install python-sat[pblib,aiger]
+```
+
+## Usage
+
+Run the program via the command line:
+
+```bash
+python queens.py N [solver]
+```
+
+## Execution example
+$ python queens.py 4
+Solving 4-Queens problem using incremental GLUCOSE3 SAT solver...
+Number of solutions for 4-Queens: 2
+✓ Result matches known value: 2
+
+
+
+$ python queens.py 8 cadical
+Solving 8-Queens problem using incremental CADICAL SAT solver...
+Number of solutions for 8-Queens: 92
+✓ Result matches known value: 92
+
+
+
+
+
+
