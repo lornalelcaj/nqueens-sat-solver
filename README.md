@@ -77,6 +77,9 @@ Run the program via the command line:
 ```bash
 python queens.py N [solver]
 ```
+- **N**: Size of the chessboard (integer > 3)  
+- **solver**: Optional SAT solver (`glucose3`, `minisat`, or `cadical`). Defaults to `glucose3`.
+
 
 ## Execution example
 $ python queens.py 4
